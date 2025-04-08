@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinta sobre Roca</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f5f1e6;
+      color: #1c1c1c;
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 2px solid #d2b48c;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #3d2b1f;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #e6ded1;
+      padding: 0.5rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #3d2b1f;
+      font-weight: bold;
+    }
+    .banner {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    section {
+      padding: 2rem;
+    }
+    .category {
+      margin-top: 3rem;
+    }
+    .category h2 {
+      border-bottom: 2px solid #d2b48c;
+      padding-bottom: 0.5rem;
+      color: #3d2b1f;
+    }
+    .article {
+      background-color: #fff;
+      border: 1px solid #d2b48c;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .article img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    .upload-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .upload-button input[type="file"] {
+      display: none;
+    }
+    .upload-button label {
+      background-color: #3d2b1f;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #e6ded1;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 2px solid #d2b48c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PERIÓDICO ESTUDIANTIL: TINTA SOBRE ROCA</h1>
+  </header>
+
+  <!-- Banner Canva -->
+  <img src="imagenes/banner.png" alt="Banner de Canva" class="banner">
+
+  <nav>
+    <a href="#noticias">Noticias</a>
+    <a href="#denuncias">Denuncias</a>
+    <a href="#cultura">Cultura</a>
+    <a href="#deporte">Deporte</a>
+  </nav>
+
+  <div class="upload-button">
+    <label for="fileUpload">📤 Subir nueva noticia</label>
+    <input type="file" id="fileUpload" name="noticia">
+  </div>
+
+  <section>
+    <div id="noticias" class="category">
+      <h2>📰 Noticias</h2>
+      <div class="article">
+        <img src="imagenes/noticia1.jpg" alt="Noticia Canva">
+        <p>Texto de la noticia relacionada al diseño</p>
+      </div>
+    </div>
+
+    <div id="denuncias" class="category">
+      <h2>🚨 Denuncias</h2>
+      <div class="article">
+        <img src="imagenes/denuncia1.jpg" alt="Denuncia Canva">
+        <p>Contenido de denuncia...</p>
+      </div>
+    </div>
+
+    <div id="cultura" class="category">
+      <h2>🎭 Cultura</h2>
+      <div class="article">
+        <img src="imagenes/cultura1.jpg" alt="Cultura Canva">
+        <p>Contenido cultural...</p>
+      </div>
+    </div>
+
+    <div id="deporte" class="category">
+      <h2>⚽ Deporte</h2>
+      <div class="article">
+        <img src="imagenes/deporte1.jpg" alt="Deporte Canva">
+        <p>Noticia deportiva...</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><em>Tinta que deja marca.</em><br>
+    Diseñado por Yaz Paredes © 2025 | 📬 tintasobreroca@gmail.com</p>
+  </footer>
+</body>
+</html>
